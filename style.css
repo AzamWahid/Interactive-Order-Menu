@@ -23,6 +23,11 @@ button {
     border-radius: 5px;
 }
 
+.menuHead {
+    text-align: center;
+    margin: 30px 0;
+}
+
 .menuBody {
     display: flex;
     justify-content: center;

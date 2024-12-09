@@ -143,6 +143,7 @@ const menuItems = [
 
 
 let menuBody = document.querySelector('.menuBody');
+let menuHead = document.querySelector('.menuHead');
 
 
 
@@ -154,7 +155,7 @@ function filter(menuType) {
         return menuType === 'All' ? element.type : element.type === menuType
 
     });
-
+    menuHead.innerHTML = `<h1>${menuType == 'All' ? menuType : menuType == 'breakfast' ? 'Breakfast' : menuType == 'lunch' ? 'Lunch' : menuType == 'milkshake' ? 'Shakes' : ''}</h1>`
     filterItems.forEach(function (element) {
 
         menuBody.innerHTML += `<div class="card mb-3" style="max-width: 540px;">
