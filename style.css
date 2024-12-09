@@ -25,11 +25,18 @@ button {
 
 .menuBody {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    /* margin: 0 auto; */
+    column-gap: 50px;
+
 }
 
-.cardImg img{
+.row {
+    height: 100%;
+}
+
+.cardImg img {
     width: 100%;
     height: 100%;
 }
